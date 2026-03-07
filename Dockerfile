@@ -11,5 +11,5 @@ COPY app ./app
 COPY README.md ./
 COPY .env.example ./
 
-ENV PORT=8002
+ENV PORT=8000
 CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT}"]
